@@ -1,0 +1,182 @@
+/*Header CSS*/
+
+#webname{
+	
+	margin: 10px 230px 10px 0px;
+	padding: 10px 10px 10px 10px;
+	float: right;
+	text-align: center;
+	font-size: 50px;
+	background-color: #F0F8FF;
+	font-family: Pacifico;
+
+	
+
+}
+
+
+
+
+/*This is my Nav bar*/
+
+.navbar{
+	text-align: center;
+	margin: auto;
+	background-color: #F0F8FF;
+	font-family: Open Sans;
+	
+
+
+	
+}
+ .nav{
+ 	text-align: center;
+ 	margin: auto;
+ 	background-color: #F0F8FF;
+ 	color: #00a6d0;
+ 	font-family: Open Sans;
+
+ }
+
+.active{
+	text-align: center;
+	background-color: #FAEBD7;
+	font-family: Open Sans;
+
+}
+
+.nav-link{
+	color: #00a6d0;
+	font-family: Open Sans;
+}
+
+
+.form-inline{
+	float: right;
+}
+
+
+
+
+/*Body*/
+
+
+
+.body-center {
+	background-color: #F0F8FF;
+	
+	
+}	
+
+.container{
+	background-color: #F0F8FF;
+	border: 1px solid black;
+}
+
+.row{
+	background-color: #F0F8FF;
+	/*border: 1px solid black;*/
+}
+
+/*Left Sidebar*/
+
+.col-sm-3{  
+	text-align: center;
+	background-color: #F0F8FF;
+}
+
+.special{
+	font-family: Pacifico;
+}
+
+.sale{
+	font-family: Open sans;
+}
+
+
+.col-sm-9{
+	border-left-style: 1px solid black;
+	border-right-style: 0px solid black;
+	border-top-color: 0px solid black;
+	border-bottom-style: 0px solid black;
+}
+
+
+
+
+
+/*Right column*/
+
+.bodyHead{
+	background-color: #F0F8FF;
+	text-align: center;
+	font-family: Pacifico;
+}
+
+.specialHead{ 
+	text-align: center;
+	background-color: #F0F8FF;
+	font-family: Open Sans;
+}
+
+.caption{
+	text-align: center;
+	font-family: Open Sans;
+}
+
+
+.leftimg{
+	width: 300px;
+	height: 270px;
+	text-align: center;
+}
+
+.sidebarId{
+	text-align: center;
+}
+
+.rightimg{
+	height: 300;
+	width: 270;
+	text-align: center;
+}
+
+
+/*images*/
+
+
+.typewriter{
+	border: 1px solid #FAEBD7;
+	float: left;
+	text-align: center;
+}
+
+.halloWeen{
+	border: 1px solid #FAEBD7;
+	float: right;
+	text-align: center;
+}
+
+
+.
+}
+
+/*Footer*/
+
+
+.list{
+	text-align: center;
+	font-family: Open Sans;
+}
+
+
+.fa{
+	color: black;
+}
+
+
+
+
+
+
+
