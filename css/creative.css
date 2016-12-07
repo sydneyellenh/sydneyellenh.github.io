@@ -65,6 +65,11 @@ h5,
 h6 {
   font-family: 'Pacifico', 'Pacifico', Arial, sans-serif;
 }
+
+#homeHeading{
+  font-size: 60px;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
