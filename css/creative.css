@@ -11,6 +11,11 @@ body {
 body {
   font-family: 'Raleway', 'Pacifico', Arial, sans-serif;
 }
+
+
+
+
+
 hr {
   border-color: #80b9b7;
   border-width: 3px;
@@ -29,13 +34,19 @@ a:hover,
 a:focus {
   color: #222222;
 }
+
+h1{
+  font-size: 60px;
+  color: white;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Abril Fatface', 'Pacifico', Arial, sans-serif;
+  font-family: 'Pacifico', 'Pacifico', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -50,7 +61,7 @@ p {
   color: white;
 }
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 section {
   padding: 100px 0;
@@ -428,3 +439,9 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.gap-right {
+  margin-right: 15px; 
+}
+
+
