@@ -72,41 +72,101 @@
 	</div>
 </div>
 
+<br>
 <!-- This is the body of my page -->
-
 <div class="container">
 	<div class="row">
-		<div class="col-sm-12">
-			  <div class="slider">
-			    <div class="slide">
-			      <img src="http://placehold.it/1020x350/DD0048/fff?text=Slide1">
+		<div class="col-sm-3" id="leftSidebar">
+		<h2 class="headingText">Categories</h2>
+	<ul class="list">
+		<li><a href="">Women's Clothing</a></li>
+		<li><a href="">Men's Clothing</a></li>
+		<li><a href="">Jewlery</a></li>
+		<li><a href="">Furniture</a></li>
+		<li><a href="">Home Decor</a></li>
+		<li><a href="">Office Supplies</a></li>
+		<li><a href="">Rare Items and Oddities</a></li>
+	</ul>
+		</div>
+	
+
+		<div class="col-sm-6">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="imgcopy/royaltype.png" alt="Chania" class="sliderImages">
+			      <div class="carousel-caption">
+			        <h3 class="carousel-text">Office Supplies</h3>
+			      </div>
 			    </div>
 
-			    <div class="slide">
-			      <img src="http://placehold.it/1020x350/05B8CC/fff?text=Slide2">
+			    <div class="item">
+			      <img src="imgcopy/flowerdress.jpg" alt="Chania" class="sliderImages">
+			      <div class="carousel-caption">
+			        <h3 class="carousel-text">Women's Clothing</h3>
+			      </div>
 			    </div>
 
-			    <div class="slide">
-			      <img src="http://placehold.it/1020x350/9077f2/fff?text=Slide3">
+			    <div class="item">
+			      <img src="imgcopy/leatherjacket.jpg" alt="Flower" class="sliderImages">
+			      <div class="carousel-caption">
+			        <h3 class="carousel-text">Men's Clothing</h3>
+			      </div>
 			    </div>
 
+			    <div class="item">
+			      <img src="imgcopy/velvetchairscopy.png" alt="Flower" class="sliderImages">
+			      <div class="carousel-caption">
+			        <h3 class="carousel-text">Furniture</h3>
+			      </div>
+			    </div>
 			  </div>
 
-			  <div class="slider-nav">
-			    <span class="arrow-prev">
-			      <i class="fa fa-chevron-left"></i></span>
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+		<div class="col-sm-3" id="rightSidebar">
+		<h2 class="headingText">Sales</h2>
+		<p class="bodyText">Here is a paragraph about sales</p>
 
-			    <ul class="slider-dots"></ul>
+		<h2 class="headingText">Coupons</h2>
+		<p class="bodyText">Here is a paragraph about coupons</p>
 
-			    <span class="arrow-next">
-			      <i class="fa fa-chevron-right"></i></span>
-			  </div>
-
-
+		<h2 class="headingText">News</h2>
+		<p class="bodyText">Here is a paragraph about news</p>
 		</div>
 	</div>
 </div>
 
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12" id="footer">
+		<h3 class="headingTextFooter">Haggard Vintage and Antiques</h3>
+		<p>1234 Wilbur Road, Martinsville, IN 46151</p>
+		<p></p>
+
+		</div>
+	</div>	
+</div>	
 
 </body>
 </html>

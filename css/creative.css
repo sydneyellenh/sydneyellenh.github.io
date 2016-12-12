@@ -264,7 +264,7 @@ header .header-content .header-content-inner p {
   position: relative;
   display: block;
   max-width: 490px;
-  max-height: 265px;
+  max-height: 243.2px;
   margin: 0 auto;
 }
 
@@ -450,10 +450,12 @@ fieldset[disabled] .btn-primary.active {
   text-shadow: none;
   background: #222222;
 }
+
 img::selection {
   color: white;
   background: transparent;
 }
+
 img::-moz-selection {
   color: white;
   background: transparent;
