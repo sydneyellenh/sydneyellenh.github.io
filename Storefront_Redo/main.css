@@ -417,7 +417,6 @@ align-items: center;
   background: rgba(0, 0, 0, 0.6);
 }
 
-/*
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
@@ -449,4 +448,4 @@ align-items: center;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}*/
+}
