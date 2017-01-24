@@ -3,101 +3,112 @@ html, body{
 	width: 100%;
 }
 
+@font-face {
+    font-family: 'littlelordfontleroy-webfont';
+    src: url('littlelordfontleroy-webfont.eot');
+    src: url('littlelordfontleroy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlelordfontleroy-webfont.woff2') format('woff2'),
+         url('littlelordfontleroy-webfont.woff') format('woff'),
+         url('littlelordfontleroy-webfont.ttf') format('truetype'),
+         url('littlelordfontleroy-webfont.svg#littlelordfontleroyregular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
 /*NAVBAR*/
 
-#navbar:before {
-    content:'\A';
-    display:block;
-    width:100vw;
-    height:60px;
-    position:absolute;
-    background:#ffffff;
-    top:-1;
-    bottom: -10;
-    z-index:-1;
-}
-#navbar:after {
-    content:url();
-    display:block;
-    height:85px;
-    position:absolute;
-    background:#ffffff;
-    top:0;
-    z-index:1;
-    /*makes th center rounded*/
-    border-radius: 50%;
-    width: 175px;
-    height: 90px;
-    background-color:#ffffff;
-    margin:0 auto;
-    left: 0;
-    right: 0;
-}
-#navbar{
-    padding:23px 0 0;
-    width:100%;
-    height:40px;
-    background:#ffffff;
+.navbar, navbar-fixed-top{
+    position: fixed;
     text-align: center;
+    margin: 0px;
+    padding-left: 55px;
+    height: 90px;
+    padding-top: 7px;
+    background-color: white;
+/*    transparent scroll*/
+     -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68); //IE
+    background: rgba(0, 0, 0, 0.78); //NON-IE
+}
+
+nav{
+    position: fixed;
 }
 #navbar a{
     width:25%;
-    margin: 0 40px;
+    margin: 0 30px 0 0;
     background:#ffffff;
     text-decoration:none; 
     /* extra styling for shits and giggles */
     color: black;
-    font-weight:600;
-    letter-spacing:0.025em;
+    letter-spacing:0.35em;
     text-transform:uppercase;
+    padding: 0px;
 }
 a:hover,a:active,a:focus,a:visited { 
     text-decoration: underline;
     outline:none;
 }
-
-#navbar a:nth-child(2) {
-  margin-right:100px
-}
-
-#navbar a:nth-child(3) {
-  margin-left:100px
-}
-
 .navTxt{
     font-family: 'Raleway';
+    text-align: center;
 }
 
+#logo{
+    width: 80px;
+    height: auto;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#socialNav{
+    float: right;
+}
 /*HEADER*/
 
 header {
   position: relative;
   width: 100%;
   height: 50%;
-  min-height: auto;
+  min-height: 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('https://www.flickr.com/photos/139723748@N06/32253884312/in/dateposted-public/');
+  background-image: url('img/DSC_0318%20copy.jpg');
   text-align: center;
   color: white;
+    
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
+
 /*HEADER CONTENT*/
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Berkshire Swash';
+  font-family: 'littlelordfontleroy-webfont';
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 0px;
+    color: black;
+  -webkit-font-smoothing: antialiased;
+    
 }
 
 
@@ -110,6 +121,13 @@ header .header-content .header-content-inner p {
   color: white;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+#homeHeading{
+    font-size: 120px;
+    font-family: 'littlelordfontleroy-webfont';
+
+
 }
 @media (min-width: 768px) {
   header {
@@ -139,6 +157,119 @@ header .header-content .header-content-inner p {
   }
 }
 
+#homeAbt{
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 7;
+    text-align: center;
+    color: black;
+
+}
+
+.headTxtTransparent{
+     background:transparent;
+    background-color: white;
+    color: black;
+	width:100%;
+	height:100%;
+ 	opacity:0.6;
+    position: relative;
+    display: block;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
 
 
+/*BODY*/
+
+#about{
+    background-color: #ead3c5;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+#aboutHeader{
+   margin: 0;
+    padding-top: 0px;
+    overflow:auto;
+    display:block;
+    font-family: 'littlelordfontleroy-webfont';
+    font-size: 60;
+}
+
+#aboutText{
+    margin-left: 0px;
+    overflow:auto;
+    display:block;
+    font-family: 'Raleway';
+}
+
+#headshot{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 10px;
+    clear:both;
+}
+
+#aboutButton{
+    margin-left: 0px;
+    overflow:auto;
+    font-family: 'Raleway';
+
+}
+
+/*Skills*/
+
+#skills{
+    padding-top: 30px;
+    background-color: floralwhite;
+    padding-bottom: 30px;
+     width: 100%;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+i { 
+    color: black;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.skillsText{
+    color: #4b1418;
+    font-family: 'littlelordfontleroy-webfont';
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+#skillsDescription{
+    font-family: 'Raleway';
+    color: black;
+    opacity: 0.8;
+}
+
+/*Portfolio*/
+
+#portfolio{
+    padding-top: 30px;
+}
+
+/*Hover images*/
 
