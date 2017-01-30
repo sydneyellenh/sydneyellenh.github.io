@@ -12,7 +12,8 @@
 
 		<!-- This is my bootstrap -->
 		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	    <!-- NOTE: Need these links for bootstrap https://www.bootstrapcdn.com/-->
 	  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -30,19 +31,24 @@
 <body class="body">
 
 <!-- NAVBAR -->
-<div>
-    <center>
-        <nav class="navbar navbar-fixed-top">
-            <a href="#about" class="navTxt" id="aboutNav">About</a>
-            <a href="#skills" class="navTxt" id="skillsNav">Skills</a>
-            <a href="#top"><img src="img/logoHaggardSyd.png" id="logo" href="#top"></a>
-            <a href="#portfolio" class="navTxt" id="portfolioNav">Portfolio</a>
-            <a href="#contact" class="navTxt" id="contactNav">Contact</a>
-    </nav>
-    </center>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <nav class="navbar navbar-fixed-top">
+                <a href="#about" class="navTxt" id="aboutNav">About</a>
+                <a href="#skills" class="navTxt" id="skillsNav">Skills</a>
+                <a href="#top"><img src="img/logoHaggardSyd.png" id="logo" href="#top"></a>
+                <a href="#portfolio" class="navTxt" id="portfolioNav">Portfolio</a>
+                <a href="#contact" class="navTxt" id="contactNav">Contact</a>
+            </nav>
+        
+        </div>
+     </div>
+</div>
+
 
 <!-- HEADER -->
-
+<div>
   <header id="top">
         <div class="header-content">
             <div class="header-content-inner">
@@ -57,10 +63,10 @@
 
 <div class="container" id="about">
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<img src="img/SydneyCropped3.jpg" id="headshot"  class="img-thumbnail" align="top">
                     <h2 class="section-heading text-left" id="aboutHeader">About Me</h2>
-                    <p class="text-faded text-left" id="aboutText">I am a recent graduate from Eleven Fifty Academy's Java Accelerated Learning Program.  While Java has been my main focus while studying in Eleven Fifty Academy, I grealy enjoy working with front-end design.  Being a photographer and graphic designer I have an eye for symetry and color.  You may check out some of my photography work on <a href="https://www.flickr.com/photos/139723748@N06/" class="aboutLinks" id="photographyLink">my Flickr page</a> and my graphic design work on <a href="#" class="aboutLinks" id="graphicdesignLink">[Coming soon!]</a>.
+                    <p class="text-faded text-left" id="aboutText">I am a former English major from IUPUI and recent graduate from Eleven Fifty Academy's Java Accelerated Learning Program.  While learning Java, I developed an admiration for using markup languages like HTML and CSS.  While being an apprentice at Eleven Fifty Academy I have begun expanding my knowledge of HTML and CSS.  I have also started diving into the world of Javascript and PHP to become a front-end web developer.  In the past, I have also worked with photography and some graphic design.  You may check out some of my photography work on <a href="https://www.flickr.com/photos/139723748@N06/" class="aboutLinks" id="photographyLink">my Flickr page</a> and my graphic design work on <a href="#" class="aboutLinks" id="graphicdesignLink">[Coming soon!]</a>.
                     <br>
                     </p>
                     <a href="#skills" class="pull-left page-scroll btn btn-default btn-xl sr-button" id="aboutButton">What are my skills?</a>
@@ -68,49 +74,33 @@
 		</div>
 	</div>
 </div>
-    
-<div class="container-fluid" id="flickrImages">
-    
-    <div class="row">
-        <div class="col-md-12">
 
-            
-            <div id="flickr_badge_wrapper">
-                
-                
-                    <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=18&display=random&size=square&nsid=139723748@N06&raw=1"></script>
-                
-            </div>     
-            
-        </div>
-    </div>
-</div>
 
     
-    <div class="container" id="skills">
+<div class="container" id="skills">
 	<div class="row">
-		    <div class="col-lg-3 col-md-6 text-center">
+		    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-laptop text-primary sr-icons" style="color:white;"></i>
                         <h3 class="skillsText">Web Development</h3>
                         <p class="text-muted" id="skillsDescription">Java, CSS, HTML, JavaScript, Spring, and Bootstrap.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paint-brush text-primary sr-icons" style="color:white;"></i>
                         <h3 class="skillsText">Design</h3>
                         <p class="text-muted" id="skillsDescription">Adobe Photoshop, Illustrator, InDesign, and Lightroom.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-camera-retro text-primary sr-icons" style="color:white;"></i>
                         <h3 class="skillsText">Photography</h3>
                         <p class="text-muted" id="skillsDescription">Nikon D5100 DSLR</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-pencil-square-o text-primary sr-icons" style="color:white;"></i>
                         <h3 class="skillsText">Other</h3>
@@ -124,7 +114,7 @@
  <div class="container" id="portfolio">
 	<div class="row">
         <h3 class="portfolioSection" id="portfolioTransparentHead">Front-End Web Development</h3>
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <figure class="snip0015">
                 
                <img src="img/portfolio/thumbnails/coffeeshopabt.png" alt="sample38" href="CYCAbout/about.html"/>
@@ -136,7 +126,7 @@
             </figure>
             </div>
         
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/haggardrestoration.png" alt="sample38" href="Storefront_Redo/index.html"/>
@@ -149,7 +139,7 @@
                     </figure>
             </div>
         
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/img4.jpg" alt="sample38"/>
@@ -166,7 +156,7 @@
      
      	<div class="row">
             <h3 class="portfolioSection" id="portfolioTransparentHead">Back-End Web Development</h3>
-               <div class="col-md-4">
+               <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/inventory.png" alt="sample38" href="https://haggardinventory.herokuapp.com/"/>
@@ -179,7 +169,7 @@
                     </figure>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/employees.png" alt="sample38" href="https://ancient-scrubland-12606.herokuapp.com/"/>
@@ -192,7 +182,7 @@
                     </figure>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/shoppinglist.png" alt="sample38" class="portfolioImages" href="https://shoppinglistteam6.herokuapp.com/"/>
@@ -209,7 +199,7 @@
      
      <div class="row">
          
-          <div class="col-md-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/users.png" alt="sample38" class="portfolioImages" href="https://bloomingbadlands.herokuapp.com/login"/>
@@ -222,7 +212,7 @@
                     </figure>
             </div>
          
-          <div class="col-md-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/img10.jpg" alt="sample38" class="portfolioImages" href="https://repl.it/Dk3U/7"/>
@@ -236,7 +226,7 @@
             </div>
          
          
-          <div class="col-md-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/img6.jpg" alt="sample38" class="portfolioImages"/>
@@ -253,14 +243,13 @@
          
      </div>     
             
-     </div>
 </div>
     
 <!--Contact    -->
     
  <div class="container-fluid" id="footer">
     <div class="row">
-        <div class="col-md-6" id="formspree">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="formspree">
         
             <div clas="container">
             <form action="https://formspree.io/sydneyellenhaggard@gmail.com"
@@ -295,7 +284,7 @@
 </div>             
         </div>
         
-        <div class="col-md-6" id="socialMedia">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="socialMedia">
         
              <div class="container" id="honeycombSocial">   
         <ul class="social">
@@ -322,7 +311,7 @@
     
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <center class="copywrite">
         [C] Sydney Haggard 2017
             </center>
