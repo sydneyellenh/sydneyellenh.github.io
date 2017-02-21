@@ -1,22 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Sydney Haggard Portfolio</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+<!--Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="Normalize/normalize.css">
+    
+<!--Local Boostrap CSS-->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.6-dist%25202/css/bootstrap.min.css">
 
-<!-- This is where my CDN links are -->
 
+<!-- This is my javascript -->
+<link rel="stylesheet" type="text/css" href="main.js">
 
-		<!-- This is my CSS -->
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<!-- This is my javascript -->
-		<link rel="stylesheet" type="text/css" href="main.js">
+<!--Local Bootstrap CSS-->
+ <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.6-dist%25202/js/bootstrap.min.js">
 
-		<!-- This is my bootstrap -->
-		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- NOTE: Need these links for bootstrap https://www.bootstrapcdn.com/-->
-	  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+<!-- NOTE: Need these links for bootstrap https://www.bootstrapcdn.com/-->
+<!-- Latest compiled and minified CSS and JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <!-- This is my CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+	
+    
 <!-- Custom fonts -->
 
 <link rel="stylesheet" type="text/css"
@@ -24,95 +37,97 @@
     
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
         
 </head>
+    
 <body class="body">
+    
 
-<!-- NAVBAR -->
-<div>
-    <center>
-        <nav class="navbar navbar-fixed-top">
-            <a href="#about" class="navTxt" id="aboutNav">About</a>
-            <a href="#skills" class="navTxt" id="skillsNav">Skills</a>
-            <a href="#top"><img src="img/logoHaggardSyd.png" id="logo" href="#top"></a>
-            <a href="#portfolio" class="navTxt" id="portfolioNav">Portfolio</a>
-            <a href="#contact" class="navTxt" id="contactNav">Contact</a>
-    </nav>
-    </center>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-fixed-top">
+  
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   
+        <span class="navbar-toggler-icon"></span>
+  
+    </button>
+    
+  <a class="navbar-brand" href="#">Sydney E. Haggard</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<!-- HEADER -->
+    
 
-  <header id="top">
+<header>
+      <div class="container-fluid">
         <div class="header-content">
             <div class="header-content-inner">
-                <span>
                 <h1 id="homeHeading">Sydney E. Haggard</h1>
                 <p id="homeAbt" class="headTxtTransparent">Front-End Developer and Photographer</p>
-                </span>
             </div>
         </div>
+    </div>
   </header>
-</div>
 
-<div class="container" id="about">
+
+<div class="container-fluid" id="about">
 	<div class="row">
-		<div class="col-sm-12">
-			<img src="img/SydneyCropped3.jpg" id="headshot"  class="img-thumbnail" align="top">
-                    <h2 class="section-heading text-left" id="aboutHeader">About Me</h2>
-                    <p class="text-faded text-left" id="aboutText">I am a recent graduate from Eleven Fifty Academy's Java Accelerated Learning Program.  While Java has been my main focus while studying in Eleven Fifty Academy, I grealy enjoy working with front-end design.  Being a photographer and graphic designer I have an eye for symetry and color.  You may check out some of my photography work on <a href="https://www.flickr.com/photos/139723748@N06/" class="aboutLinks" id="photographyLink">my Flickr page</a> and my graphic design work on <a href="#" class="aboutLinks" id="graphicdesignLink">[Coming soon!]</a>.
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<img src="img/SydneyCropped3.jpg" id="headshot"  class="img-thumbnail">
+                    <h2 class="section-heading" id="aboutHeader">About Me</h2>
+                    <p class="text-faded" id="aboutText">I am a recent graduate from Eleven Fifty Academy's Java Accelerated Learning Program.  While Java has been my main focus while studying in Eleven Fifty Academy, I grealy enjoy working with front-end design.  Being a photographer and graphic designer I have an eye for symetry and color.  You may check out some of my photography work on <a href="https://www.flickr.com/photos/139723748@N06/" class="aboutLinks" id="photographyLink">my Flickr page</a> and my graphic design work on <a href="#" class="aboutLinks" id="graphicdesignLink">[Coming soon!]</a>.
                     <br>
                     </p>
-                    <a href="#skills" class="pull-left page-scroll btn btn-default btn-xl sr-button" id="aboutButton">What are my skills?</a>
-                    <a href="https://docs.google.com/document/d/1zVzavcjFVkMrpg52lvwhLbCVGFah5XK2Mrp0EViYceM/edit?usp=sharing" class="btn btn-default btn-xl sr-button" id="aboutButton">View My Resume</a>
+                    <a href="#skills" class="pull-left page-scroll btn btn-default btn-xl sr-button" id="skillsButton">What are my skills?</a>
+                    <a href="https://docs.google.com/document/d/1zVzavcjFVkMrpg52lvwhLbCVGFah5XK2Mrp0EViYceM/edit?usp=sharing" class="btn btn-default btn-xl sr-button" id="resumeButton">View My Resume</a>
 		</div>
 	</div>
 </div>
-    
-<div class="container-fluid" id="flickrImages">
-    
-    <div class="row">
-        <div class="col-md-12">
-
-            
-            <div id="flickr_badge_wrapper">
-                
-                
-                    <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=18&display=random&size=square&nsid=139723748@N06&raw=1"></script>
-                
-            </div>     
-            
-        </div>
-    </div>
-</div>
-
-    
-    <div class="container" id="skills">
+     
+<div class="container-fluid" id="skills">
 	<div class="row">
-		    <div class="col-lg-3 col-md-6 text-center">
+		    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-laptop text-primary sr-icons" style="color:white;"></i>
+                        <i class="fa fa-4x fa-laptop text-primary sr-icons"></i>
                         <h3 class="skillsText">Web Development</h3>
                         <p class="text-muted" id="skillsDescription">Java, CSS, HTML, JavaScript, Spring, and Bootstrap.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paint-brush text-primary sr-icons" style="color:white;"></i>
+                        <i class="fa fa-4x fa-paint-brush text-primary sr-icons"></i>
                         <h3 class="skillsText">Design</h3>
                         <p class="text-muted" id="skillsDescription">Adobe Photoshop, Illustrator, InDesign, and Lightroom.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-camera-retro text-primary sr-icons" style="color:white;"></i>
+                        <i class="fa fa-4x fa-camera-retro text-primary sr-icons"></i>
                         <h3 class="skillsText">Photography</h3>
                         <p class="text-muted" id="skillsDescription">Nikon D5100 DSLR</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-pencil-square-o text-primary sr-icons" style="color:white;"></i>
+                        <i class="fa fa-4x fa-pencil-square-o text-primary sr-icons"></i>
                         <h3 class="skillsText">Other</h3>
                         <p class="text-muted" id="skillsDescription">Git, Eclipse, Sublime Text, Gradle, Microsoft Office Suite, and Slack.</p>
                     </div>
@@ -121,10 +136,10 @@
 </div>
     
     
- <div class="container" id="portfolio">
+ <div class="container-fluid" id="portfolio">
 	<div class="row">
         <h3 class="portfolioSection" id="portfolioTransparentHead">Front-End Web Development</h3>
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
             <figure class="snip0015">
                 
                <img src="img/portfolio/thumbnails/coffeeshopabt.png" alt="sample38" href="CYCAbout/about.html"/>
@@ -136,7 +151,7 @@
             </figure>
             </div>
         
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/haggardrestoration.png" alt="sample38" href="Storefront_Redo/index.html"/>
@@ -149,7 +164,7 @@
                     </figure>
             </div>
         
-        <div class="col-md-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/img4.jpg" alt="sample38"/>
@@ -166,7 +181,7 @@
      
      	<div class="row">
             <h3 class="portfolioSection" id="portfolioTransparentHead">Back-End Web Development</h3>
-               <div class="col-md-4">
+               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/inventory.png" alt="sample38" href="https://haggardinventory.herokuapp.com/"/>
@@ -179,7 +194,7 @@
                     </figure>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/employees.png" alt="sample38" href="https://ancient-scrubland-12606.herokuapp.com/"/>
@@ -192,7 +207,7 @@
                     </figure>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/shoppinglist.png" alt="sample38" class="portfolioImages" href="https://shoppinglistteam6.herokuapp.com/"/>
@@ -209,7 +224,7 @@
      
      <div class="row">
          
-          <div class="col-md-4">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/users.png" alt="sample38" class="portfolioImages" href="https://bloomingbadlands.herokuapp.com/login"/>
@@ -222,7 +237,7 @@
                     </figure>
             </div>
          
-          <div class="col-md-4">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/img10.jpg" alt="sample38" class="portfolioImages" href="https://repl.it/Dk3U/7"/>
@@ -236,7 +251,7 @@
             </div>
          
          
-          <div class="col-md-4">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <figure class="snip0015">
                 
                         <img src="img/portfolio/thumbnails/img6.jpg" alt="sample38" class="portfolioImages"/>
@@ -253,14 +268,13 @@
          
      </div>     
             
-     </div>
-</div>
+    </div>
     
 <!--Contact    -->
     
  <div class="container-fluid" id="footer">
     <div class="row">
-        <div class="col-md-6" id="formspree">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="formspree">
         
             <div clas="container">
             <form action="https://formspree.io/sydneyellenhaggard@gmail.com"
@@ -294,8 +308,10 @@
                 
 </div>             
         </div>
+
+<div class="row">
         
-        <div class="col-md-6" id="socialMedia">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="socialMedia">
         
              <div class="container" id="honeycombSocial">   
         <ul class="social">
@@ -314,15 +330,16 @@
  </div> 
             
         </div>
+        </div>
     </div>
 </div>
     
-<!--FOOTER    -->
+<!--FOOTER-->
     
     
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <center class="copywrite">
         [C] Sydney Haggard 2017
             </center>
@@ -330,23 +347,26 @@
     </div>
 </div>
     
-    
 </body>
 
-<!-- JavaScript -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- JAVASCRIPT -->
+    
+<!--  Bootstrap CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<!-- Local Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-alpha.6-dist%25202/js/bootstrap.min.js">
+    
+<!-- My JS -->
+    <link rel="stylesheet" type="text/css" href="main.js">
+    
 
-	  	<!-- This is my jQuery -->
-	  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>  
-	
-		<!--Internal link to js/jquery file-->
-		<script type="text/javascript" src="0.00_jquery.js"></script>
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>  
 
-		<!-- This is my Font Awesome CDN -->
-		<script src="https://use.fontawesome.com/f8ee221ae8.js"></script>
+<!-- This is my Font Awesome CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<!-- SnapWidget -->
-<script src="https://snapwidget.com/js/snapwidget.js"></script>
 </html>
