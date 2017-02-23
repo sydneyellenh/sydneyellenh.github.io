@@ -24,11 +24,24 @@ nav {
     padding: 0px;
     margin: 0px;
     bottom: 0px;
-    text-align: center;
     display: block;
+    background-color: white;
+    position: fixed;
 }
 
+.navbar-brand{
+    font-family: 'Raleway';
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+}
 
+.nav-link{
+    font-family: 'Raleway';
+    letter-spacing: 3px;
+    -webkit-font-smoothing: antialiased;
+}
 
 /*HEADER*/
 
@@ -44,7 +57,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('img/DSC_0318.jpg');
+  background-image: url('img/background.jpg');
   text-align: center;
   color: white;
     
@@ -266,7 +279,9 @@ header .header-content .header-content-inner p {
 #skillsDescription{
     font-family: 'Raleway';
     font-size: 15px;
-    color: white;
+    margin-top: 5px;
+    text-align: center;
+    color: white !important;
     opacity: 0.8;
     -webkit-font-smoothing: antialiased;
 }
