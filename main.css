@@ -25,7 +25,7 @@ nav {
     margin: 0px;
     bottom: 0px;
     display: block;
-    background-color: white;
+    background-color: #ead2c5;
     position: fixed;
 }
 
@@ -43,6 +43,13 @@ nav {
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;
     
+}
+
+.navbar-fixed-top,{
+  position: fixed; /* <-- Look here */
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 /*HEADER*/
@@ -216,8 +223,8 @@ header .header-content .header-content-inner p {
     float: left;
     margin-right: 10px;
     clear:both;
-    width: 230px;
-    height: 250px;
+    width: 250px;
+    height: auto;
     border-bottom: 50px solid white;
     border-left: 5px solid white;
     border-top: 5px solid white;
@@ -227,12 +234,16 @@ header .header-content .header-content-inner p {
 
 #skillsButton, #resumeButton{
     margin-left: 0px;
+    margin-top: 10px;
     color: #4b1418;
     overflow: auto;
     font-family: 'Raleway';
     padding-left: 10px;
     border: 1px solid white;
     background-color: white;
+    clear: both;
+    display: inline-block;
+
 
 }
 
@@ -405,6 +416,17 @@ header .header-content .header-content-inner p {
     }    
 }
 
+@media screen and (max-width: 786px)   {
+    #portfolioTransparentHead{
+        margin-bottom: 5px;
+       padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 9px;
+        font-size: 55px;
+        text-align: center;
+    }    
+}
+
 
 
 /*Hover images*/
@@ -541,6 +563,28 @@ input{
     font-family: 'Raleway';
 }
 
+#submit{
+    background-color: #4b1418;
+    font-family: 'Raleway';
+    
+}
+
+@media screen and (max-width: 786px)   {
+    #formspree{
+        float: none !important;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 50px;
+        clear:both !important;
+    }    
+}
+
+@media screen and (max-width: 786px)
+{
+    #submit{
+        width: 100%;
+        font-family: 'Raleway';
+    }
+}
 
 /*FOOTER*/
 
@@ -552,6 +596,7 @@ input{
     text-align: center;
     font-family: 'Raleway';
     display: block;
+    opacity: .6;
 }
 
 a {
@@ -572,9 +617,6 @@ ul {
 #honeycombSocial{
     margin-top: 50px;
     text-align: center;
-    clear: left;
-    float: left;
-    margin-left: 275px;
     display: block;
 }
 
@@ -693,8 +735,18 @@ ul {
 @media screen and (max-width: 786px)   {
     #honeycombSocial{
         float: none !important;
-        padding: 0px !important;
         margin: 0px !important;
+        padding-left: 80px;
         clear:both !important;
     }    
 }
+
+@media screen and (max-width: 786px)   {
+    .copywrite{
+        float: none !important;
+        margin: 0px !important;
+        padding-top: 50px;
+        clear:both !important;
+    }    
+}
+
