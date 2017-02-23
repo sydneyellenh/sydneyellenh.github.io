@@ -35,12 +35,14 @@ nav {
     font-weight: 100;
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;
+    o
 }
 
 .nav-link{
     font-family: 'Raleway';
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 /*HEADER*/
@@ -244,6 +246,42 @@ header .header-content .header-content-inner p {
     margin-left: 10px;
 }
 
+@media screen and (max-width: 786px)   {
+    #about, #headshot, #aboutHeader, #aboutText, #skillsButton, #resumeButton{
+        width: 100%;
+        float:none !important;
+        padding: 10px 10px 10px 10px;
+        margin: 0px;
+        height: auto;
+        text-align: center;
+    }    
+}
+
+@media screen and (max-width: 786px)   {
+    #headshot{
+        width: 100%;
+        float:none !important;
+        padding: 10px 10px 10px 10px;
+        margin: 0px;
+        height: auto;
+        max-height: auto;
+        max-width: 250px;
+    }    
+}
+
+@media screen and (max-width: 786px)   {
+    #aboutText{
+        text-align: left;
+    }    
+}
+
+@media screen and (max-width: 786px)   {
+    #resumeButton{
+        margin-top: 5px;
+    }    
+}
+
+
 /*Skills*/
 
 #skills{
@@ -278,12 +316,21 @@ header .header-content .header-content-inner p {
 
 #skillsDescription{
     font-family: 'Raleway';
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 5px;
     text-align: center;
     color: white !important;
     opacity: 0.8;
     -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 786px)   {
+    #skills{
+        margin: 0px;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        
+    }    
 }
 
 /*Portfolio*/
@@ -335,6 +382,30 @@ header .header-content .header-content-inner p {
     text-align: center;
     -webkit-font-smoothing: antialiased;
 }
+
+@media screen and (max-width: 786px)   {
+    #portfolio{
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }    
+}
+
+@media screen and (max-width: 786px)   {
+    .snip0015{
+        text-align: center !important;
+        display: block !important;
+        margin: auto !important;
+        float: none !important;
+    }    
+}
+
+@media screen and (max-width: 786px)   {
+    #portImg{
+        padding-bottom: 10px;
+    }    
+}
+
+
 
 /*Hover images*/
 
@@ -609,3 +680,21 @@ ul {
     color: white;
 }
 
+
+@media screen and (max-width: 786px)   {
+    #socialMedia{
+        float: none !important;
+        padding: 0px !important;
+        margin: 0px !important;  
+        clear:both !important;
+    }    
+}
+
+@media screen and (max-width: 786px)   {
+    #honeycombSocial{
+        float: none !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        clear:both !important;
+    }    
+}
