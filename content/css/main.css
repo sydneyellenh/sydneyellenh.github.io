@@ -1,0 +1,27 @@
+html, body {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px; }
+
+.header {
+  position: relative; }
+  .header .header__inner-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .header .header__inner-wrapper .header__inner__headline-wrapper {
+      text-align: center;
+      font-family: "Cormorant Garamond", Georgia, "Times New Roman", Times, serif; }
+      .header .header__inner-wrapper .header__inner__headline-wrapper .header__headline.line-1 {
+        font-size: 20px; }
+      .header .header__inner-wrapper .header__inner__headline-wrapper .header__headline.line-2 {
+        font-size: 60px; }
+    .header .header__inner-wrapper .header__inner__subhead-wrapper {
+      text-align: center; }

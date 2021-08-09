@@ -1,0 +1,10 @@
+$font-oswald: 'Oswald', Arial, Helvetica, sans-serif;
+$font-cormo-garamond: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+
+html, body{
+    font-family: $font-oswald;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+@import '_partials/blocks';
