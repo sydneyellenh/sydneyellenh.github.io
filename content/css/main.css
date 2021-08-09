@@ -5,6 +5,10 @@ html, body {
 
 .header {
   position: relative; }
+  .header .under-construction {
+    position: absolute;
+    left: 20px;
+    top: 20px; }
   .header .header__inner-wrapper {
     width: 100%;
     height: 90vh;
@@ -18,10 +22,53 @@ html, body {
         align-items: center; }
     .header .header__inner-wrapper .header__inner__headline-wrapper {
       text-align: center;
-      font-family: "Cormorant Garamond", Georgia, "Times New Roman", Times, serif; }
+      font-family: "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
+      padding-bottom: 20px; }
       .header .header__inner-wrapper .header__inner__headline-wrapper .header__headline.line-1 {
-        font-size: 20px; }
+        font-size: 20px;
+        margin-bottom: -15px; }
       .header .header__inner-wrapper .header__inner__headline-wrapper .header__headline.line-2 {
         font-size: 60px; }
     .header .header__inner-wrapper .header__inner__subhead-wrapper {
       text-align: center; }
+      .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead {
+        font-weight: 300; }
+        .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 {
+          font-weight: 500;
+          padding-top: 20px;
+          font-family: "Cormorant Garamond", Georgia, "Times New Roman", Times, serif; }
+          .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a {
+            text-decoration: none;
+            color: #01390d;
+            position: relative; }
+            .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a span::before {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #c88d91;
+              -ms-transform: scaleX(0);
+                  transform: scaleX(0);
+              transition: .35s ease transform;
+              -ms-transform-origin: center left;
+                  transform-origin: center left;
+              z-index: 2; }
+            .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a span::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #01390d;
+              z-index: 1; }
+            .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a:hover {
+              cursor: pointer; }
+              .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a:hover span::before {
+                -ms-transform: scaleX(1);
+                    transform: scaleX(1);
+                transition: .35s ease transform;
+                -ms-transform-origin: center left;
+                    transform-origin: center left; }
