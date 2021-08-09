@@ -1,10 +1,22 @@
 $font-oswald: 'Oswald', Arial, Helvetica, sans-serif;
 $font-cormo-garamond: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
 
+$color-pink: #c88d91;
+$color-green: #01390d;
+$color-black: #000000;
+$color-dark-grey: #000000;
+$color-white: #ffffff;
+
 html, body{
     font-family: $font-oswald;
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body{
+        background-color: black;
+    }
 }
 
 @import '_partials/blocks';

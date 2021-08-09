@@ -3,6 +3,10 @@ html, body {
   font-weight: 200;
   letter-spacing: 1px; }
 
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: black; } }
+
 .header {
   position: relative; }
   .header .under-construction {
@@ -72,3 +76,17 @@ html, body {
                 transition: .35s ease transform;
                 -ms-transform-origin: center left;
                     transform-origin: center left; }
+
+@media (prefers-color-scheme: dark) {
+  .header .under-construction {
+    color: #c88d91; }
+  .header .header__inner-wrapper .header__inner__headline-wrapper {
+    color: white; }
+  .header .header__inner-wrapper .header__inner__subhead-wrapper {
+    color: white; }
+    .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a {
+      color: #c88d91; }
+      .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a span::before {
+        background-color: #01390d; }
+      .header .header__inner-wrapper .header__inner__subhead-wrapper .header__subhead.line-4 a span::after {
+        background-color: #c88d91; } }
