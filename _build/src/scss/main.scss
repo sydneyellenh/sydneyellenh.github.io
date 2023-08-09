@@ -1,21 +1,231 @@
-$font-oswald: 'Oswald', Arial, Helvetica, sans-serif;
-$font-cormo-garamond: 'Cormorant Garamond', Georgia, 'Times New Roman', Times, serif;
+@import '_fonts';
 
-$color-pink: #c88d91;
-$color-green: #01390d;
-$color-black: #000000;
-$color-dark-grey: #000000;
+$font-montserrat: "Montserrat", Arial, sans-serif;
+$font-replicant: "Replicant", Arial, sans-serif;
+$font-replicant-rounded: 'YRT Replicant Rounded', Arial, sans-serif;
+$font-tough-luck: 'YRT Tough Luck', Arial, sans-serif;
+$font-tough-luck-stamped: 'YRT Tough Luck Stamped', Arial, sans-serif;
+$font-bite-the-bullet: 'YRT Bite The Bullet', Times, sans-serif;
+$font-lady-victory: 'YRT Lady Victory', Times, sans-serif;
+$font-moon-valley: 'YRT Moon Valley', Times, sans-serif;
+
+$font-fino: "fino-sans", sans-serif; //400, 700
+$font-espiritu: "espiritu", serif; 
+$font-espiritu-dingbats: "espiritu-dingbats", serif; 
+$font-griffith: "griffith-gothic-condensed", sans-serif; //100, 300, 400, 700
+
+
+// $color-black: #070c0f;
+$color-black: #030303;
+$color-grey: #1f1f1f;
+$color-pink: #D9BCBC;
+$color-orange: #B45F4B;
+$color-off-white: #EBECED;
 $color-white: #ffffff;
 
 html, body{
-    font-family: $font-oswald;
-    font-weight: 200;
+    font-family: $font-griffith;
+    background-color: $color-orange;
     letter-spacing: 1px;
+    margin: 0;
+    color: $color-white;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+.content{
+    // min-height: 700px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+   a{
+    color: $color-pink;
+    text-decoration: underline;
+    transition: .35s ease color;
+
+    &:hover{
+      color: $color-orange;
+      transition: .35s ease color;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .headline{
+    font-family: $font-moon-valley, serif;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+    line-height: 1.5;
+    & > a {
+      text-decoration: underline;
+    }
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+@mixin for-size($size) {
+    @if $size == mobile {
+      @media (max-width: 699px) { @content; }
+    } @else if $size == tablet {
+      @media (min-width: 700px) { @content; }
+    } @else if $size == desktop-md {
+      @media (min-width: 992px) { @content; }
+    } @else if $size == desktop-lg {
+      @media (min-width: 1200px) { @content; }
+    } @else if $size == max {
+      @media (min-width: 1600px) { @content; }
+    }
+  }
+  
+  @mixin only-for-size($size) {
+    @if $size == mobile {
+      @media (max-width: 699px) { @content; }
+    } @else if $size == mobile-and-tablet {
+      @media (max-width: 991px)  { @content; }
+    } @else if $size == tablet {
+      @media (min-width: 700px) and (max-width: 991px) { @content; }
+    } @else if $size == desktop-md {
+      @media (min-width: 992px) and (max-width: 1199px)  { @content; }
+    } @else if $size == desktop-lg {
+      @media (min-width: 1200px) and (max-width: 1599px)  { @content; }
+    }
+  }
+
+  @include for-size(mobile){
+    .no-scroll{
+      overflow: hidden;
+    }
+  }
+
+
+.button{
+    &.outline{
+        position: relative;
+        height: 40px;
+        width: 162px;
+            .link{
+                color: $color-orange;
+            //  border-radius: 10px;
+                font-family: $font-replicant;
+                font-size: 16px;
+                transition: .35s ease color, .35s ease border;
+                background-color: $color-white;
+                border: 2px solid $color-orange;
+                padding: 12px 20px 10px 20px;
+                position: relative;
+                z-index: 2;
+
+                &:hover{
+                    cursor: pointer;
+                    color: $color-orange;
+                    border: 2px solid $color-orange;
+                    transition: .35s ease color, .35s ease border;
+
+                }
+            }
+    
+    }
+}
+
+.link__wrapper{
+  position: relative;
+  padding: 10px 0;
+      .button{
+          &.solid{
+              color: $color-white;
+              // border-radius: 10px;
+              font-family: $font-replicant;
+              font-size: 16px;
+              transition: .35s ease color;
+              background-color: $color-orange;
+              padding: 12px 20px 10px 20px;
+              position: relative;
+              z-index: 2;
+              &.large{
+                padding: 15px ​30px 12px 30p;
+                font-size: 24px;
+                & ~ .button__hover-background{
+                  top: -10px;
+                  left: 1px;
+                  width: 83%;
+                  height: 122%;
+                }
+              }
+
+              &:hover{
+                  cursor: pointer;
+                  color: $color-pink;
+                  transition: .35s ease color;
+                  
+                  & ~ .button__hover-background{
+                      transform: translateX(10px) translateY(10px);
+                      transition: .35s ease transform;
+                  }
+              }
+          }
+
+          &.outline{
+              color: $color-orange;
+          //  border-radius: 10px;
+              font-family: $font-replicant;
+              font-size: 16px;
+              transition: .35s ease color, .35s ease border;
+              background-color: $color-white;
+              border: 2px solid $color-orange;
+              padding: 12px 20px 10px 20px;
+              position: relative;
+              z-index: 2;
+
+              &.large{
+                padding: 15px ​30px 12px 30p;
+                font-size: 24px;
+              }
+
+              &:hover{
+                  cursor: pointer;
+                  color: $color-orange;
+                  border: 2px solid $color-orange;
+                  transition: .35s ease color, .35s ease border;
+
+              }
+          
+          }
+          
+      }
+
+      .button__hover-background{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 99%;
+          height: 100%;
+          background-color: $color-pink;
+          // border-radius: 10px;
+          z-index: 1;
+          transform: translateX(0px) translateY(0px);
+          transition: .25s ease transform;
+      }
+
+           
+      
+  }
 
 @media (prefers-color-scheme: dark) {
     html, body{
-        background-color: black;
+        // background-color: black;
     }
 }
 
