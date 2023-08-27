@@ -82,7 +82,7 @@
                 font-family: $font-fino;
                 font-size: 22px;
                 text-transform: uppercase;
-                color: $color-orange;
+                color: $color-off-white;
                 font-weight: bold;
                 z-index: 2;
                 position: relative;
@@ -90,7 +90,7 @@
                 letter-spacing: 2px;
 
                 @include for-size(mobile){
-                    width: calc(50% - 20px);
+                    width: 100%;
                     padding: 20px 10px;
                 }
 
@@ -116,17 +116,20 @@
         left: 0;
         overflow: hidden;
         margin-top: -60px;
+        @include for-size(desktop-md){
+            height: 14.5vw;
+        }
         &::after{
             content: "IIIIII";
             position: relative;
             z-index: 3;
             background: rgb(2,0,36);
-            background: linear-gradient(180deg, $color-black 52%, $color-orange 50%);
+            background: linear-gradient(180deg, $color-black 52%, $color-pink 50%);
             font-family: $font-espiritu-dingbats;
             color: $color-black;
             width: 100%;
             letter-spacing: -6px;
-            font-size: 8.5vw;
+            font-size: 9vw;
             bottom: 0vw;
         }
     }

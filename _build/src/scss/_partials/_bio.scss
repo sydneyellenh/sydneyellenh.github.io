@@ -1,0 +1,30 @@
+.bio{
+    background-color: $color-black;
+    padding: 40px 20px 100px 20px;
+    .bio__inner-wrapper{
+        .bio__inner__headline-wrapper{
+            .bio__headline{
+                font-family: $font-espiritu;
+                font-size: 36px;
+                text-align: center;
+                color: $color-orange;
+                text-transform: uppercase;
+                @include for-size(tablet){
+                    font-size: 60px;
+                }
+            }
+            .bio__subheadline{
+                font-family: $font-fino;
+                font-size: 24px;
+                text-align: center;
+                color: $color-pink;
+                text-transform: uppercase;
+                margin-top: 0;
+                @include for-size(tablet){
+                    font-size: 28px;
+                }
+            }
+        }
+        
+    }
+}

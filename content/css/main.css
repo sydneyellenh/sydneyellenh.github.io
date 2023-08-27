@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html, body {
   font-family: "griffith-gothic-condensed", sans-serif;
-  background-color: #B45F4B;
+  background-color: #D9BCBC;
   letter-spacing: 1px;
   margin: 0;
   color: #ffffff;
@@ -197,7 +197,7 @@ img {
         font-family: "fino-sans", sans-serif;
         font-size: 22px;
         text-transform: uppercase;
-        color: #B45F4B;
+        color: #EBECED;
         font-weight: bold;
         z-index: 2;
         position: relative;
@@ -205,7 +205,7 @@ img {
         letter-spacing: 2px; }
         @media (max-width: 699px) {
           .header .header__inner-wrapper .header__inner__subheadline-wrapper .header__subheadline {
-            width: calc(50% - 20px);
+            width: 100%;
             padding: 20px 10px; } }
         @media (min-width: 700px) {
           .header .header__inner-wrapper .header__inner__subheadline-wrapper .header__subheadline {
@@ -223,27 +223,78 @@ img {
     left: 0;
     overflow: hidden;
     margin-top: -60px; }
+    @media (min-width: 992px) {
+      .header .header__bottom-border {
+        height: 14.5vw; } }
     .header .header__bottom-border::after {
       content: "IIIIII";
       position: relative;
       z-index: 3;
       background: #020024;
-      background: linear-gradient(180deg, #030303 52%, #B45F4B 50%);
+      background: linear-gradient(180deg, #030303 52%, #D9BCBC 50%);
       font-family: "espiritu-dingbats", serif;
       color: #030303;
       width: 100%;
       letter-spacing: -6px;
-      font-size: 8.5vw;
+      font-size: 9vw;
       bottom: 0vw; }
 
+.bio {
+  background-color: #030303;
+  padding: 40px 20px 100px 20px; }
+  .bio .bio__inner-wrapper .bio__inner__headline-wrapper .bio__headline {
+    font-family: "espiritu", serif;
+    font-size: 36px;
+    text-align: center;
+    color: #B45F4B;
+    text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .bio .bio__inner-wrapper .bio__inner__headline-wrapper .bio__headline {
+        font-size: 60px; } }
+  .bio .bio__inner-wrapper .bio__inner__headline-wrapper .bio__subheadline {
+    font-family: "fino-sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #D9BCBC;
+    text-transform: uppercase;
+    margin-top: 0; }
+    @media (min-width: 700px) {
+      .bio .bio__inner-wrapper .bio__inner__headline-wrapper .bio__subheadline {
+        font-size: 28px; } }
+
 .projects {
-  padding: 60px 20px; }
+  position: relative;
+  padding: 60px 20px 200px 20px; }
+  @media (min-width: 992px) {
+    .projects {
+      padding: 60px 20px 250px 20px; } }
+  @media (min-width: 1600px) {
+    .projects {
+      padding: 60px 20px 300px 20px; } }
+  .projects::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    border-top: 60px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 100vw solid #030303; }
+    @media (min-width: 700px) {
+      .projects::after {
+        border-top: 6vw solid transparent; } }
+    @media (min-width: 1600px) {
+      .projects::after {
+        border-top: 150px solid transparent; } }
   .projects .projects__inner-wrapper .projects__inner__headline-wrapper .projects__headline {
     font-family: "espiritu", serif;
-    font-size: 60px;
+    font-size: 36px;
     text-align: center;
     color: #030303;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .projects .projects__inner-wrapper .projects__inner__headline-wrapper .projects__headline {
+        font-size: 60px; } }
   .projects .projects__inner-wrapper .projects__wrapper {
     padding-top: 60px; }
     .projects .projects__inner-wrapper .projects__wrapper .project__tape {
@@ -251,18 +302,19 @@ img {
       background-color: #444243;
       padding: 0 1%;
       border-radius: 10px;
-      max-width: 1200px; }
+      max-width: 1200px;
+      border: 2px solid #030303; }
       .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper {
         background-color: #292929;
-        padding: 10px;
+        padding: 10px 0px;
         height: 100%;
         width: 100%;
         border-radius: 15px;
         position: relative;
-        min-height: 16vw; }
+        min-height: 100px; }
         @media (min-width: 700px) {
           .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper {
-            min-height: 8vw; } }
+            min-height: 10vw; } }
         @media (min-width: 1200px) {
           .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper {
             min-height: 110px; } }
@@ -270,9 +322,23 @@ img {
           font-family: "griffith-gothic-condensed", sans-serif;
           font-weight: 700;
           color: #444243;
-          font-size: 1.5vw;
-          padding-left: 2%; }
-          @media (min-width: 1200px) {
+          padding-left: 2%;
+          position: relative;
+          width: fit-content; }
+          @media (max-width: 699px) {
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__proj-year {
+              font-size: 2.5vw;
+              top: 16px;
+              left: -5px;
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg); } }
+          @media (max-width: 699px) {
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__proj-year {
+              font-size: 2vw; } }
+          @media (min-width: 992px) {
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__proj-year {
+              font-size: 1.5vw; } }
+          @media (min-width: 1600px) {
             .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__proj-year {
               font-size: 20px; } }
         .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__notch {
@@ -304,20 +370,69 @@ img {
               align-items: center;
           -ms-flex-direction: row;
               flex-direction: row; }
+          .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label:hover .tape__label__client-wrapper {
+            opacity: 0;
+            transition: .15s ease opacity; }
+          .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label:hover .tape__label__details-wrapper {
+            opacity: 1;
+            transition: .35s ease opacity; }
           .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper {
-            max-width: 19vw;
+            height: 100%;
+            width: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+            -ms-flex-align: center;
+                align-items: center;
+            padding-left: 20px;
+            opacity: 1;
+            transition: .35s ease opacity; }
+            @media (min-width: 700px) {
+              .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper {
+                -ms-flex-pack: center;
+                    justify-content: center; } }
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__label.accessibility {
+              opacity: 0;
+              position: absolute; }
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__logo__wrapper {
+              max-width: 150px;
+              max-height: 100px; }
+              @media (min-width: 700px) {
+                .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__logo__wrapper {
+                  max-width: 200px;
+                  max-height: 100px; } }
+              @media (min-width: 992px) {
+                .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__logo__wrapper {
+                  max-width: 300px;
+                  max-height: 100px; } }
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .logo {
+              height: 100%;
+              width: 100%;
+              object-fit: contain; }
+          .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__details-wrapper {
+            position: absolute;
+            max-width: 500px;
             max-height: 4vw;
             height: 100%;
             width: 100%;
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-pack: center;
-                justify-content: center;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
             -ms-flex-align: center;
-                align-items: center; }
-            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__label {
-              font-size: 2vw;
-              text-align: center;
+                align-items: center;
+            opacity: 0;
+            transition: .15s ease opacity;
+            padding-left: 20px; }
+            @media (min-width: 700px) {
+              .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__details-wrapper {
+                -ms-flex-pack: center;
+                    justify-content: center;
+                text-align: center;
+                padding-left: 0; } }
+            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__details-wrapper .tape__label {
+              font-size: 25px;
               font-family: "fino-sans", sans-serif;
               color: #030303;
               height: 100%;
@@ -327,30 +442,37 @@ img {
                   justify-content: center;
               -ms-flex-align: center;
                   align-items: center; }
-              .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__label.accessibility {
+              .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__details-wrapper .tape__label.accessibility {
                 opacity: 0;
                 position: absolute; }
-            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .tape__sub-label {
-              text-align: center;
-              font-family: "fino-sans", sans-serif;
-              color: #030303;
-              font-size: 1.5vw; }
-            .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__client-wrapper .logo {
-              height: auto;
-              width: 100%;
-              object-fit: contain; }
+              @media (min-width: 992px) {
+                .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__details-wrapper .tape__label {
+                  font-size: 3vw; } }
+              @media (min-width: 1600px) {
+                .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__label__details-wrapper .tape__label {
+                  font-size: 30px; } }
           .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__logo {
             position: absolute;
-            right: 20px;
-            max-width: 100px;
-            max-height: 60px;
+            right: 10px;
             height: 100%;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-pack: center;
                 justify-content: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+            max-width: 50px;
+            max-height: 30px; }
+            @media (min-width: 700px) {
+              .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__logo {
+                right: 20px;
+                max-width: 70px;
+                max-height: 50px; } }
+            @media (min-width: 992px) {
+              .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__logo {
+                right: 20px;
+                max-width: 100px;
+                max-height: 60px; } }
             .projects .projects__inner-wrapper .projects__wrapper .project__tape .tape__inner-wrapper .project__tape__label .tape__logo .logo {
               width: 100%;
               height: auto; }
