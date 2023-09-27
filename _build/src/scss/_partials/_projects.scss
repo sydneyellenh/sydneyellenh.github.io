@@ -125,10 +125,10 @@
                                 transition: .35s ease opacity;
                             }
 
-                            // .tape__logo{
-                            //     opacity: 0;
-                            //     transition: .15s ease opacity;
-                            // }
+                            .tape__logo{
+                                opacity: 0;
+                                transition: .15s ease opacity;
+                            }
                         }
                         .tape__label__client-wrapper{
                             // max-width: 19vw;
@@ -136,13 +136,12 @@
                             height: 100%;
                             width: 100%;
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: center;
                             align-items: center;
                             padding-left: 20px;
                             opacity: 1;
                             transition: .35s ease opacity;
                             @include for-size(tablet){
-                                justify-content: center;
     
                             }
                             .tape__label{
@@ -152,8 +151,9 @@
                                     }
                                 }
                                 .tape__logo__wrapper{
-                                    max-width: 150px;
-                                    max-height: 100px;
+                                    max-width: 210px;
+                                    max-height: 120px;
+                                    margin-left: -60px;
                                     @include for-size(tablet){
                                         max-width: 200px;
                                         max-height: 100px;
@@ -182,16 +182,18 @@
                             opacity: 0;
                             transition: .15s ease opacity;
                             padding-left: 20px;
+                            text-align: center;
+                            justify-content: center;
                             @include for-size(tablet){
-                                justify-content: center;
-                                text-align: center;
                                 padding-left: 0;
     
                             }
                             .tape__label{
                                 font-size: 25px;
-                                font-family: $font-fino;
+                                font-family: $font-griffith;
+                                font-weight: 300;
                                 color: $color-black;
+                                text-transform: uppercase;
                                 height: 100%;
                                 display: flex;
                                 justify-content: center;

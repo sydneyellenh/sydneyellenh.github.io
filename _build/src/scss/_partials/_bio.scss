@@ -2,6 +2,8 @@
     background-color: $color-black;
     padding: 40px 20px 100px 20px;
     .bio__inner-wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
         .bio__inner__headline-wrapper{
             .bio__headline{
                 font-family: $font-espiritu;
@@ -22,6 +24,175 @@
                 margin-top: 0;
                 @include for-size(tablet){
                     font-size: 28px;
+                }
+            }
+        }
+
+        .bio__three-col__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 20px 40px 20px;
+            @include for-size(desktop-md){
+                padding: 60px 20px;
+                flex-direction: row;
+            }
+            .content__bio{
+                @include for-size(desktop-md){
+                    width: 33.33%;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 16px;
+                    text-align: center;
+                    @include for-size (tablet){
+                        text-align: left;
+                    }
+                    &.emphasized{
+                        font-family: $font-fino;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .bio__col-two{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding-top: 20px;
+                @include for-size(tablet){
+                    align-items: flex-start;
+                    flex-direction: row;
+                }
+                @include for-size(desktop-md){
+                    width: 66.66%;
+                    padding-top: 0;
+                }
+                .content__image{
+                    position: relative;
+                    margin-top: 50px;
+                    @include for-size(tablet){
+                        margin-right: 5%;
+                        width: 40%;
+                    }
+                    @include for-size(desktop-md){
+                        margin: 0 5%;
+                        width: 50%;
+                    }
+                    .image__inner-wrapper{
+                        height: 80vw;
+                        width: 100%;
+                        // max-width: 300px;
+                        max-height: 600px;
+                        text-align: center;
+                        margin: 0 auto;
+                        position: relative;
+                        @keyframes flicker {
+                            0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                                opacity: .99;
+                            }
+                            20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                                opacity: 0.4;
+                                text-shadow: none;
+                            }
+                        }
+                        
+                        @include for-size(tablet){
+                            height: 42vw;
+                            width: 100%;
+                            min-width: 20vw;
+                            max-height: 600px;
+                        }
+                        
+                        &:hover{
+                            cursor: pointer;
+                            .image__secondary{
+                                z-index: 3;
+                            }
+                        }
+                        
+                        .image__primary{
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                            object-fit: cover;
+                            position: relative;
+                            animation: flicker 4s linear infinite;
+                            border: 1px solid #6c6d6e;
+                            @media (prefers-reduced-motion) {
+                                animation-play-state: paused;
+                            }
+                        }
+                        .image__secondary{
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            object-fit: cover;
+                            z-index: 1;
+                            border: 1px solid #6c6d6e;
+                        }
+                    }
+                }
+    
+                .content__skills{
+                    @include for-size(tablet){
+                        width: 60%;
+                    }
+                    @include for-size(desktop-md){
+                        width: 50%;
+                    }
+                    .skills__list{
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        @include for-size (tablet){
+                            text-align: left;
+                        }
+                        .skill__category{
+                            margin: 0;
+                            font-family: $font-fino;
+                            font-size: 24px;
+                            &:not(:first-child){
+                                padding: 20px 0 0 0;
+                            }
+                            ul {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                margin: 0;
+                                padding: 5px 0 0 0;
+                                list-style: none;
+                                justify-content: center;
+                                align-items: center;
+                                @include for-size (tablet){
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                }
+                                li{
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: $font-griffith;
+                                    font-size: 16px;
+                                    width: max-content;
+                                    margin-right: 5px;
+                                    line-height: 1.2;
+                                    font-weight: 300;
+                                    &:not(:last-child){
+                                        &::after{
+                                            content: ",";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

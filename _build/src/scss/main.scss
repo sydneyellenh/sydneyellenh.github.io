@@ -75,6 +75,15 @@ img{
 }
 
 
+footer{
+  text-align: center;
+  // font-family: $font-fino;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: $color-orange;
+  padding: 40px 20px;
+}
+
 
 @mixin for-size($size) {
     @if $size == mobile {

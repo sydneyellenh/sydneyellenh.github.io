@@ -1,0 +1,107 @@
+.contact{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 25%;
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 40px solid $color-black;
+        @include for-size(tablet){
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 80px solid $color-black;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 25%;
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 40px solid $color-black;
+        @include for-size(tablet){
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 80px solid $color-black;
+        }
+    }
+    .contact__inner-wrapper{
+        max-width: 992px;
+        margin: 0 auto;
+        padding: 100px 20px;
+        position: relative;
+
+        .contact__tv{
+            
+        }
+
+        .contact__content{
+            position: absolute;
+            top: 49.5%;
+            left: 43.5%;
+            transform: translateX(-50%) translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            max-height: 498px;
+            width: 59.5%;
+            height: 39%;
+            @include for-size(desktop-md){
+                height: 49%;
+            }
+            .contact__item{
+                color: $color-white;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .contact__text{
+                        &::after{
+                            transform: scaleX(1);
+                            transition: .35s ease transform;
+                        }
+                    }
+                }
+
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+                .contact__icon{
+                    max-height: 4vw;
+                    @include for-size(desktop-md){
+                        max-height: 30px;
+                    }
+                }
+
+                .contact__text{
+                    padding-left: 10px;
+                    font-size: 2.6vw;
+                    position: relative;
+                    font-family: $font-espiritu;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -3px;
+                        height: 1px;
+                        width: 100%;
+                        background-color: $color-white;
+                        transform: scaleX(0);
+                        transition: .35s ease transform;
+                        transform-origin: center left;
+                    }
+                    @include for-size(desktop-md){
+                        padding-left: 10px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
