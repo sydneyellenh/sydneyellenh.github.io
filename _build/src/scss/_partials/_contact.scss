@@ -44,7 +44,7 @@
 
         .contact__content{
             position: absolute;
-            top: 49.5%;
+            top: 51%;
             left: 43.5%;
             transform: translateX(-50%) translateY(-50%);
             display: flex;
@@ -54,6 +54,7 @@
             height: 39%;
             @include for-size(desktop-md){
                 height: 49%;
+                top: 49.5%;
             }
             .contact__item{
                 color: $color-white;
